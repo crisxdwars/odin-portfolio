@@ -1,0 +1,157 @@
+:root {
+    --dark-background-color: #1F2937;
+    --hero-main-text:#F9FAF8;
+    --hero-secondary-text: #E5E7EB;
+    --hero-logo-text: #F9FAF8;
+    --button-color: #3882F6;
+    --quote-bg: #E5E7EB;
+    /* Others */
+}
+
+* {
+    user-select: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    overflow: hidden;
+    padding: 20px;
+    background-color: var(--dark-background-color);
+}
+
+.top-bar-holder {
+    background-color: var(--dark-background-color);
+    padding: 0 200px;
+}
+
+.links {
+    float: right;
+}
+
+.top-bar h1 {
+    color: var(--hero-main-text);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: var(--hero-secondary-text);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #bbbcbd;
+}
+
+.hero-section {
+    background-color: var(--dark-background-color);
+    padding: 100px 200px;
+}
+
+.left {
+    display: grid;
+}
+
+.left p {
+    width: 400px;
+    color: var(--hero-secondary-text);
+}
+
+.left h1 {
+    max-width: 500px;
+    color: var(--hero-logo-text);
+    font-size: 48px;
+}
+
+.btn-signup {
+    cursor: pointer;
+    background: var(--button-color);
+    color: var(--hero-logo-text);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-signup:hover {
+    scale: 1.05;
+    background-color:  #2f6fd6;
+}
+
+.right {
+    position: absolute;
+    top: 200px;
+    left: 60%;
+    float: right;
+    color: white;
+    height: 200px; width: 500px;
+    text-align: center;
+    background-color: rgba(232, 232, 232, 0.517);
+}
+
+.content {
+    padding: 40px 200px;
+    text-align: center;
+}
+
+.content h2 {
+    color: var(--dark-background-color);
+}
+
+.img-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    display: flex;    
+}
+
+.img-box img{
+    margin-top: 40px;
+    border: 2px solid var(--button-color);
+    border-radius: 10px;
+    height: 100px; width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-box img:hover {
+    scale: 1.02;
+}
+
+.img-box p {
+    font-size: 12px;
+    width: 150px;
+    color: var(--dark-background-color);
+}
+
+.quote {
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    top: 300px;
+    background-color: var(--quote-bg);
+}
+
+.quote i {
+    font-size: 20px;
+}
+
+.footer-blue {
+    position: absolute;
+    top: 600px;
+    padding: 20px 200px;
+    border: none;
+    background: var(--button-color);
+    max-width: 300px;
+    max-height: 200px;
+    color: var(--hero-logo-text);
+}
+
+.footer-blue h1 {
+    float: left;
+}
